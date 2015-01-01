@@ -2,23 +2,21 @@ package com.example.garry.timun;
 
 import android.test.ActivityInstrumentationTestCase2;
 
-import org.junit.runner.RunWith;
+import com.example.garry.timun.MainActivity;
 
-import cucumber.api.CucumberOptions;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.junit.Cucumber;
 
 /**
- * Created by garry on 1/1/15.
+ * Created by garry on 1/2/15.
  */
 
 
-public class MainActivityStepDefs extends ActivityInstrumentationTestCase2<MainActivity> {
+public class MainActivityStepDefinition extends ActivityInstrumentationTestCase2<MainActivity> {
 
-    public MainActivityStepDefs() {
+    public MainActivityStepDefinition() {
         super(MainActivity.class);
     }
 
