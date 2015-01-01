@@ -14,10 +14,7 @@ import cucumber.api.junit.Cucumber;
  * Created by garry on 1/1/15.
  */
 
-@RunWith(Cucumber.class)
-@CucumberOptions (
-        features = "features"
-)
+
 public class MainActivityStepDefs extends ActivityInstrumentationTestCase2<MainActivity> {
 
     public MainActivityStepDefs(Class<MainActivity> activityClass) {
