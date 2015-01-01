@@ -2,15 +2,22 @@ package com.example.garry.timun;
 
 import android.test.ActivityInstrumentationTestCase2;
 
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.junit.Cucumber;
 
 /**
  * Created by garry on 1/1/15.
  */
 
-
+@RunWith(Cucumber.class)
+@CucumberOptions (
+        features = "features"
+)
 public class MainActivityStepDefs extends ActivityInstrumentationTestCase2<MainActivity> {
 
     public MainActivityStepDefs(Class<MainActivity> activityClass) {
